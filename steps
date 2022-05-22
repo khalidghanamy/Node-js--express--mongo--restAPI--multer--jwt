@@ -1,0 +1,81 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------
+npm init -y
+
+npm i pkg-nam --save    ----> to  save it in dependancies
+npm i pkg-nam --save-dev    ----> to  save it in devdependancies
+npm i pkg-nam -g    ----> global
+
+
+npm i morgan --save-dev
+
+
+npm i express-validator --save --> for validation
+
+>>>>>when moving your project ---> delete folder node_module
+
+npm install --> development --> best practice to npm uninstall pkjname
+
+npm install  --production    while install on production
+
+
+npm update pkg-name
+npm install pkgName@1.0.2    certain version
+
+------------------
+to solve nodemon problem :
+------------------------->
+1..> open windows powerShell as admin.. 
+2..>command#--->> Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+------------------------->
+
+
+mongo database :
+------------------>
+
+1..>npm install --save mongoose
+
+2..> open models
+      ..>create  schema for collections
+
+3..> connection of Db --> go to server and require mongoose and open connection with it
+4...> go to controllers to create crud on the schema
+
+
+
+========================================================================
+//- upload image  
+     --> enctype="multipart/form-data"
+     --> npm install multer --save
+
+//- authentication --> permission --> login
+                                    >api stateless server ---token --> better {JWT token --> best library{
+                                          1-client --> login --> access
+                                          2- server --> signed token(secret key)---> respones (token)-->valid for 20min or
+                                          3- client --> with every request (token) --> localstorage
+
+                                          ----------------------------------
+                                          install JWT --> npm install --save josnwebtoken
+                                    }}
+                                    >viewa+node  ---> session and cookies
+      authorization --> rights
+//- security
+            >>input validation
+//- env configuration file
+     --> npm install --save dotenv
+     -->in server require("dotenv").config()
+     -->
