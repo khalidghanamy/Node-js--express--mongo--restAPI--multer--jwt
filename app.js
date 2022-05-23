@@ -97,7 +97,7 @@ app.use(studentRouter);
 //not found midleeware
 app.use((req,res)=>{
     console.log(err);
-let status=err.status || 500;
+let status=err.status || 404;
     res.status(status).json({data:"not Found"});
 });
 // middleware errors catcher (4--parameters are mandatory)
