@@ -7,6 +7,7 @@ const path = require('path');
 const departmentRouter=require("./Routers/DepartmentRoute");
 const studentRouter = require('./Routers/StudentRoute');
 const authRouter = require('./Routers/AuthRoute');
+const isAuth = require('./Middleware/authMW')
 
 
 //image variables
