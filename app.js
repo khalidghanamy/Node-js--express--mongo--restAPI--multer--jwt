@@ -79,7 +79,7 @@ app.use((req,res,next)=>{
 app.use("/images",express.static(path.join(__dirname,"images")))
 app.use(multer({storage,fileFilter}).single('image'));
 app.use(body_parser.json());
-app.use(body_parser.urlencoded({extended:false})); --> deprecated
+app.use(body_parser.urlencoded({extended:false}));
 
 
 //-------------------------ROUTES--(End Points)--------------------------//
@@ -87,7 +87,7 @@ app.use(body_parser.urlencoded({extended:false})); --> deprecated
 //login
 app.use(authRouter);
 
-//app.use(isAuth)
+app.use(isAuth)
 app.use("/department",departmentRouter);
 app.use(studentRouter);
 
