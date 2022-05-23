@@ -47,7 +47,7 @@ module.exports = {
    
     Department.findByIdAndUpdate(req.body._id, {
       
-      $set: {
+      _$set: {
             name: req.body.name,
             location: req.body.location,
         },
